@@ -1,6 +1,7 @@
 import { builder, type Handler } from "@netlify/functions";
 
 const myHandler: Handler = async (event, context) => {
+  const date = new Date();
   return {
     statusCode: 200,
     ttl: 60,
@@ -11,7 +12,7 @@ const myHandler: Handler = async (event, context) => {
     <!DOCTYPE html>
       <html>
         <body>
-          Hello World ${Date.now()}
+          Hello World ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}
         </body>
     </html>
     `,
