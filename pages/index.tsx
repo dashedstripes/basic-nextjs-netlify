@@ -6,7 +6,7 @@ const Home: React.FC = () => {
       <div className='flex flex-col items-center'>
         <Image src="/netlify.svg" width={200} height={100} alt="Netlify" className='mb-10'/>
         <h1 className='font-bold text-6xl text-gray-400 mb-8'>We&apos;re online!</h1>
-        <h2 className='text-4xl text-white'>Is this a cool feature?</h2>
+        <h2 className='text-4xl text-white'>Is this a cool feature??</h2>
       </div>
     </div>
   )
