@@ -3,8 +3,9 @@ module.exports = {
       console.log("onPostBuild: I run  onPostBuild 🎉");
 
       const fs = require("fs")
+      const path = require('path')
 
-      const filenames = fs.readdirSync(__dirname);
+      const filenames = fs.readdirSync(path.join(__dirname, '..'));
   
       console.log("\nCurrent directory filenames:");
       filenames.forEach(file => {
