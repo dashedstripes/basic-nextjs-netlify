@@ -3,4 +3,4 @@ function = "security-policy"
 path = "/*"
 
 [[plugins]]
-  package = "./plugins/netlify-plugin-email-sendgrid"
+  package = "./plugins/netlify-get-odb-handler"
