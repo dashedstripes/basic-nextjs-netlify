@@ -7,7 +7,7 @@ module.exports = {
 
       console.log('process.cwd()', process.cwd());
 
-      const filenames = fs.readdirSync(path.join(__dirname, '..', '..', '.netlify', 'functions'));
+      const filenames = fs.readdirSync(path.join(__dirname, '..', '..', '.netlify'));
   
       console.log("\nCurrent directory filenames:", path.join(__dirname, '..', '..', '.netlify', 'functions'));
       filenames.forEach(file => {
