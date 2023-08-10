@@ -5,7 +5,7 @@ module.exports = {
       const fs = require("fs")
       const path = require('path')
 
-      const filenames = fs.readdirSync(path.join(__dirname, '..', '..'));
+      const filenames = fs.readdirSync(path.join(__dirname, '..', '..', 'netlify'));
   
       console.log("\nCurrent directory filenames:");
       filenames.forEach(file => {
