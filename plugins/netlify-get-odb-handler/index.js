@@ -5,9 +5,9 @@ module.exports = {
       const fs = require("fs")
       const path = require('path')
 
-      const filenames = fs.readdirSync(path.join(__dirname, '..', '..', '.next'));
+      const filenames = fs.readdirSync(path.join(__dirname, '..', '..', '.netlify', 'functions'));
   
-      console.log("\nCurrent directory filenames:");
+      console.log("\nCurrent directory filenames:", path.join(__dirname, '..', '..', '.netlify', 'functions'));
       filenames.forEach(file => {
         console.log(file);
         if(file === '___netlify-odb-handler.zip') {
