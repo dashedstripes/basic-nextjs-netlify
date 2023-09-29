@@ -7,3 +7,9 @@ export default async (_, context) => {
 
   return response;
 }
+
+export const config = {
+  path: "/hello",
+  onError: "/unavailable"
+
+}
