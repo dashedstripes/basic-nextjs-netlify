@@ -9,7 +9,5 @@ export default async (_, context) => {
 }
 
 export const config = {
-  path: "/hello",
   onError: "/unavailable"
-
 }
