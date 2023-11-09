@@ -25,6 +25,7 @@ const Home: React.FC<Props> = ({ hours, minutes }) => {
         <Image src="/netlify.svg" width={200} height={100} alt="Netlify" className='mb-10'/>
         <h1 className='font-bold text-6xl text-white mb-8'>We&apos;re online!</h1>
         <p className='text-2xl text-white'>{hours}:{minutes}</p>
+        <p>Woah everything is different on this branch!</p>
       </div>
     </div>
   )
